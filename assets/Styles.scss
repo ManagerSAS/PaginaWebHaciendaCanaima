@@ -1,0 +1,89 @@
+.flotante{
+    background-color: #fff;
+    max-width: 80px;
+    position: fixed;
+    border-radius: 15px 0 0 15px;
+    z-index: 10; 
+    right: 0; 
+  }
+
+.Whatsapp{
+    background-image: url('../static/Images/Whatsapp.png');
+    background-repeat:no-repeat;
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+.Facebook{
+    background-image: url('../static/Images/Facebook.png');
+    background-repeat:no-repeat;
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+.Instagram{
+    background-image: url('../static/Images/Instagram.png');
+    background-repeat:no-repeat;
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+.Behance{
+    background-image: url('../static/Images/Behance.png');
+    background-repeat:no-repeat;
+    display: block;
+    height: 35px;
+    width: 35px;
+}
+.Tripadvisor{
+    background-image: url('../static/Images/Tripadvisor.png');
+    background-repeat:no-repeat;
+    display: block;
+    height: 30px;
+    width: 100%;
+}
+.btn-hover{
+    border-radius: 10px;
+    background-color: #95bd20;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    @media #{$tablet-device, $large-mobile}{
+        font-size: 20px;
+    }
+}
+.btn-hover:hover{
+    background-color:#fff;
+    color: #95bd20;
+}
+.slick-dots {
+    background-color: transparent;
+    position: relative;
+  }
+.slick-dots button:before {
+    color: white; 
+    opacity: .25; 
+    background-color: transparent; 
+    font-size: 20px; 
+}
+.slick-dots .slick-active button:before {
+    color: white;
+    opacity: 1;
+    font-size: 20px;
+}
+.titulos{
+    color:#395730; 
+    font-size: 36px;
+    font-weight: 800;
+}
+.slick-prev:before {
+    content: "<";
+    color: red;
+    font-size: 30px;
+  }
+.slick-next:before {
+    content: ">";
+    color: red;
+    font-size: 30px;
+}

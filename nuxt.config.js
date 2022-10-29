@@ -16,15 +16,24 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://unpkg.com/vue-slick-carousel' }
     ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/TheHeader.scss',
+    '~/assets/Styles.scss',
+    '~/assets/Intro.scss'
+
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    // '~/plugins/VueSlickCarousel.js',
+
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -40,6 +49,8 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxt/image'
+
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
