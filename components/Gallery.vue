@@ -6,9 +6,9 @@
             </h1>
         </div>
         <v-row justify="center" align="center">
-            <v-col cols="12" xl="8" lg="8" md="10" sm="12">
+            <v-col cols="12" xl="10" lg="8" md="10" sm="12">
                 <VueSlickCarousel v-bind="settings"  justify="center" align="center">
-                    <div  v-for="(src, index) in sliderData" :key="index" >
+                    <div justify="center" align="center" v-for="(src, index) in sliderData" :key="index" >
                         <v-img
                              width="80%" 
                             :src="src"
@@ -19,13 +19,25 @@
                             {{ arrowOption.currentSlide }}/{{ arrowOption.slideCount }}
                         </div>
                     </template>
-
-                </VueSlickCarousel>
-                
+                </VueSlickCarousel>   
+                <div justify="center" align="center">
+                    <button aria-label="RESERVA CON NOSOTROS" aria-hidden="true" to="/" class="ml-lg-15 mt-lg-15 btn-hover pa-1 pl-2 pr-2">RESERVA CON NOSOTROS</button>
+                </div>   
             </v-col>
         </v-row>
     </div>
 </template>
+<style>
+.slick-prev:before {
+    content: url('https://img.icons8.com/ios-glyphs/60/395730/chevron-left.png');
+    color: #395730 !important;
+  }
+.slick-next:before {
+    content: url('https://img.icons8.com/ios-glyphs/60/395730/chevron-right.png');
+    color: #395730 !important;
+    font-size: 30px;
+}
+</style>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
@@ -34,8 +46,14 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
      data(){
         return{
             sliderData: [
-                {src: "/Images/BANNER1.png"},
-                {src: "/Images/BANNER2.png"},
+                {src: "/Images/Galeria/foto1.png"},
+                {src: "/Images/Galeria/foto2.png"},
+                {src: "/Images/Galeria/foto3.png"},
+                {src: "/Images/Galeria/foto4.png"},
+                {src: "/Images/Galeria/foto1.png"},
+                {src: "/Images/Galeria/foto2.png"},
+                {src: "/Images/Galeria/foto3.png"},
+                {src: "/Images/Galeria/foto4.png"},
             ],
             settings  :{
                 arrows: true,
@@ -43,8 +61,9 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
                 autoplay: true,
                 infinite: true,
                 autoplaySpeed: 4000,
-                slidesToShow: 1,
+                slidesToShow: 4,
                 slidesToScroll: 1,
+                
             },            
         }
      },
