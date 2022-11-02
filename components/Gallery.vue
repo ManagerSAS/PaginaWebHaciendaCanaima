@@ -14,11 +14,6 @@
                             :src="src"
                         ></v-img>
                     </div>
-                    <template #prevArrow="arrowOption">
-                        <div class="custom-arrow">
-                            {{ arrowOption.currentSlide }}/{{ arrowOption.slideCount }}
-                        </div>
-                    </template>
                 </VueSlickCarousel>   
                 <div justify="center" align="center">
                     <button aria-label="RESERVA CON NOSOTROS" aria-hidden="true" to="/" class="ml-lg-15 mt-lg-15 btn-hover pa-1 pl-2 pr-2">RESERVA CON NOSOTROS</button>
@@ -27,15 +22,15 @@
         </v-row>
     </div>
 </template>
-<style>
+<style lang="scss">
 .slick-prev:before {
-    content: url('https://img.icons8.com/ios-glyphs/60/395730/chevron-left.png');
-    color: #395730 !important;
+    content: url('../static/Images/chevron-left.png');
+    /* color: #395730 !important; */
   }
 .slick-next:before {
-    content: url('https://img.icons8.com/ios-glyphs/60/395730/chevron-right.png');
-    color: #395730 !important;
-    font-size: 30px;
+    content: url('../static/Images/chevron-right.png');
+    /* color: #395730 !important; */
+    /* font-size: 30px; */
 }
 </style>
 <script>

@@ -77,3 +77,70 @@
     font-size: 36px;
     font-weight: 800;
 }
+.containerCall{
+    min-height: 250px;
+    &.text{
+        font-size: 25px;
+        font-weight: lighter;
+        color: #395730;
+    }
+}
+.textServices{
+    display: block;
+    align-items: center;
+    min-height: 200px;
+    min-width: 200px;
+    font-size: 25px;
+    font-weight: lighter;
+    color: #395730;
+}
+.ContainerAbaut{
+    min-height: 500px;
+    max-height: 600px;
+    display: flex;
+    align-items: center;
+    &
+    &.text{
+        font-size:30px;
+        font-weight: 900;
+        color: #395730;
+    }
+}
+.titleAbaut{
+    font-size:30px;
+    font-weight: 900;
+    color: #395730;
+}
+.textAbaut{
+    font-size:25px;
+    font-weight: lighter;
+    color: #395730;
+}
+.FondoFotoExperiences{
+    border-radius: 50% 50% 15px 15px;
+    background-color: #395730;
+    min-height: 250px;
+    max-height: 300px;
+    min-width: 210px;
+    max-width: 210px; 
+}
+.Foto{
+    border: 5px solid #395730;   
+    margin-top: auto;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.nameExperiens{
+    max-width: 200px; 
+}
+.Testiminio{
+    font-size:18px;
+    font-weight:normal;
+    color: #395730;
+    font-style: italic;
+}
+.input{
+    font-style: italic;
+    border-color: #395730 !important;
+}
