@@ -26,8 +26,7 @@ export default {
   css: [
     '~/assets/TheHeader.scss',
     '~/assets/Styles.scss',
-    '~/assets/Intro.scss'
-
+    '~/assets/Intro.scss',
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins

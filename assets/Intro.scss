@@ -28,6 +28,9 @@
         // line-height: 1.2;
         color: $white;
         font-weight: 800;
+        @media #{$small-mobile, $extra-small-mobile}{
+            font-size: 20px;
+        }
     }
 }
 .intro-slider {
@@ -44,7 +47,7 @@
         color: $white;
         opacity: 0;
         visibility: hidden;
-        transition: $transition;
+        transition: all 0.4s ease 0.2s;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);

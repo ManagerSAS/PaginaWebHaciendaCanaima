@@ -222,7 +222,7 @@
                             width: 0;
                             height: 1px;
                             content: "";
-                            transition: $transition;
+                            transition: all 0.4s ease 0.2s;
                             background-color: $primary;
                         }
                     }
@@ -469,7 +469,7 @@
     height: 100vh;
     visibility: hidden;
     opacity: 0;
-    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all 0.4s ease 0.2s;
     z-index: 99999;
     .mobile-menu-overlay {
         top: 0;
@@ -572,7 +572,7 @@
     visibility: hidden;
     width: 100%;
     height: 100%;
-    transition: $transition;
+    transition: all 0.4s ease 0.2s;
     opacity: 0;
     background: rgba($color: #95bd20, $alpha: 1.0)
 }
@@ -583,7 +583,7 @@
     float: right;
     width: 360px;
     height: 100%;
-    transition: $transition;
+    transition: all 0.4s ease 0.2s;
     transform: translateX(100%);
     // background-color: $white-opacity-50;
     // background-image: url("/images/bg/mobile-bg.jpg");
@@ -610,7 +610,7 @@
 
 #page {
     position: relative;
-    transition: $transition;
+    transition: all 0.4s ease 0.2s;
 }
 
 .mobile-menu-open {
@@ -733,7 +733,7 @@
                 & i {
                     font-size: 18px;
                     line-height: 1;
-                    transition: $transition;
+                    transition: all 0.4s ease 0.2s;
                 }
 
                 &:hover {

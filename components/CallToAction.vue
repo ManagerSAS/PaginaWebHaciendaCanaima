@@ -1,5 +1,5 @@
 <template>
-    <div >
+    <v-container fluid>
         <v-row justify="center" align="center">
             <v-col cols="12" sm="12" md="10" lg="8">
                 <v-row class="containerCall text" justify="center" align="center">
@@ -14,5 +14,5 @@
                 </v-row>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>

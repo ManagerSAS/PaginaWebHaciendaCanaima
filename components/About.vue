@@ -1,17 +1,17 @@
 <template>
-    <div class="ContainerAbaut">
+    <v-container fluid >
         <v-row justify="center" align="center">
-            <v-col cols="12" sm="12" md="10" lg="8">
+            <v-col cols="12" sm="10" md="10" lg="8">
                 <v-row justify="center" align="center">
                     <v-col justify="center" align="start" cols="12" sm="12" md="6" lg="6">
                         <h1 class="titleAbaut">QUIÉNES SOMOS</h1>
-                        <p class="textAbaut">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum velit modi veniam corrupti facilis totam praesentium voluptate, reprehenderit unde sunt fuga alias quis ipsam ab tempore in, doloribus magni dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia rem assumenda tempora dolorum harum ad quasi. Magni vero voluptas iste cum fugiat ut voluptatum voluptates aut quibusdam. Minima, eius dignissimos.</p>
+                        <p class="textAbaut">Somos una hacienda agroturística, ubicada en la ruta Amanecer Llanero, rodeada de naturaleza que busca ofrecer una experiencia diferente de desconexión y relax .</p>
                     </v-col>
                     <v-col>
-                        <v-video src=""></v-video>
+                        <iframe src="" frameborder="0"></iframe>
                     </v-col>            
                 </v-row>
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-container fluid>
         <div justify="center" align="center" >
             <h1 class="mb-6 mt-5 titulos" >
                 EXPERIENCIAS DE LOS CLIENTES
@@ -7,7 +7,7 @@
         </div>
         <v-row justify="center" align="center">
             <v-col cols="12" xl="7" lg="7" md="10" sm="12">
-                <VueSlickCarousel class="ma-10 container" v-bind="settings"  justify="center" align="center">
+                <VueSlickCarousel class="container" v-bind="settings"  justify="center" align="center">
                     <div  justify="center" align="center" v-for="({src,Name,Desc}, index) in sliderData" :key="index" >
                         <v-row  justify="center" align="center">
                             <v-col cols="12" sm="12" md="10" lg="10">
@@ -28,8 +28,19 @@
                 </div>   
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
+<style >
+.slick-prev:before {
+    content: url('../static/Images/chevron-left.png');
+    /* color: #395730 !important; */
+  }
+.slick-next:before {
+    content: url('../static/Images/chevron-right.png');
+    /* color: #395730 !important; */
+    /* font-size: 30px; */
+}
+</style>
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
@@ -51,7 +62,36 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
                 autoplaySpeed: 4000,
                 slidesToShow: 2,
                 slidesToScroll: 1,
-                
+                responsive: [
+                    {
+                    "breakpoint": 1024,
+                        "settings": {
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": true
+                        }
+                    },
+                    {
+                    "breakpoint": 414,
+                        "settings": {
+                            arrows: false,
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": false
+                        }
+                    },
+                    {
+                    "breakpoint": 720,
+                        "settings": {
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": true
+                        }
+                    }
+                ]
             },            
         }
      },

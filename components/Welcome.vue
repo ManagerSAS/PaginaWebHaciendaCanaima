@@ -7,10 +7,10 @@
                         <v-row justify="center" align="center">
                             <v-col  justify="center" align="center" >
                                 <div class="intro-content m-auto text-center">
-                                    <div justify="center" align="center"  class="desc pb-15 mb-15">
-                                        <img :src="banner.logo" max-width="400" alt="logo hacienda canaima">
+                                    <div justify="center" align="center"  class="pb-lg-15 mb-lg-15">
+                                        <img class="logoBanner" :src="banner.logo" alt="logo hacienda canaima">
                                     </div>
-                                    <div class="titulo mt-15 pt-15">
+                                    <div class="titulo mt-lg-15 pt-lg-15">
                                         <p style="font-weight: 500">{{banner.text}}</p>
                                     </div>
                                     <button aria-label="RESERVA CON NOSOTROS" aria-hidden="true" to="/" class="ml-lg-15 mt-lg-15 btn-hover pa-1 pl-2 pr-2">RESERVA CON NOSOTROS</button>

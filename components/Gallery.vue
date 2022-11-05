@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <v-container fluid >
         <div justify="center" align="center" >
             <h1 class="mb-6 mt-5 titulos" >
                 GALERÍA DE FOTOS
@@ -20,9 +20,9 @@
                 </div>   
             </v-col>
         </v-row>
-    </div>
+    </v-container>
 </template>
-<style lang="scss">
+<style >
 .slick-prev:before {
     content: url('../static/Images/chevron-left.png');
     /* color: #395730 !important; */
@@ -51,14 +51,42 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
                 {src: "/Images/Galeria/foto4.png"},
             ],
             settings  :{
-                arrows: true,
                 dots: false,
                 autoplay: true,
                 infinite: true,
                 autoplaySpeed: 4000,
                 slidesToShow: 4,
                 slidesToScroll: 1,
-                
+                responsive: [
+                    {
+                    "breakpoint": 1024,
+                        "settings": {
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": false
+                        }
+                    },
+                    {
+                    "breakpoint": 414,
+                        "settings": {
+                            arrows: false,
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": true
+                        }
+                    },
+                    {
+                    "breakpoint": 720,
+                        "settings": {
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": false
+                        }
+                    }
+                ]
             },            
         }
      },

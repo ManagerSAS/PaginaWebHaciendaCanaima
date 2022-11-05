@@ -5,6 +5,11 @@
     border-radius: 15px 0 0 15px;
     z-index: 10; 
     right: 0; 
+    @media #{$small-mobile, $extra-small-mobile}{
+        max-width: 55px;
+        opacity: 0.7;
+
+    }
   }
 
 .Whatsapp{
@@ -28,7 +33,7 @@
     height: 35px;
     width: 35px;
 }
-.Behance{
+.Booking{
     background-image: url('../static/Images/Behance.png');
     background-repeat:no-repeat;
     display: block;
@@ -76,6 +81,9 @@
     color:#395730; 
     font-size: 36px;
     font-weight: 800;
+    @media #{$small-mobile, $extra-small-mobile}{
+        font-size: 20px;
+    }
 }
 .containerCall{
     min-height: 250px;
@@ -93,28 +101,26 @@
     font-size: 25px;
     font-weight: lighter;
     color: #395730;
-}
-.ContainerAbaut{
-    min-height: 500px;
-    max-height: 600px;
-    display: flex;
-    align-items: center;
-    &
-    &.text{
-        font-size:30px;
-        font-weight: 900;
-        color: #395730;
+    @media #{$small-mobile, $extra-small-mobile}{
+        font-size: 20px;
     }
 }
+
 .titleAbaut{
     font-size:30px;
     font-weight: 900;
     color: #395730;
+    @media #{$small-mobile, $extra-small-mobile}{
+        font-size: 20px;
+    }
 }
 .textAbaut{
     font-size:25px;
     font-weight: lighter;
     color: #395730;
+    @media #{$small-mobile, $extra-small-mobile}{
+        font-size: 20px;
+    }
 }
 .FondoFotoExperiences{
     border-radius: 50% 50% 15px 15px;
@@ -143,4 +149,10 @@
 .input{
     font-style: italic;
     border-color: #395730 !important;
+}
+.logoBanner{
+    width: 400px;
+    @media #{$small-mobile, $extra-small-mobile}{
+        width: 300px;
+    }
 }
