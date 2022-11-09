@@ -7,15 +7,15 @@
         </div>
         <v-row justify="center" align="center">
             <v-col cols="12" xl="7" lg="7" md="10" sm="12">
-                <VueSlickCarousel class="container" v-bind="settings"  justify="center" align="center">
+                <VueSlickCarousel class="container" v-bind="settingsExperiences"  justify="center" align="center">
                     <div  justify="center" align="center" v-for="({src,Name,Desc}, index) in sliderData" :key="index" >
                         <v-row  justify="center" align="center">
                             <v-col cols="12" sm="12" md="10" lg="10">
                                 <div class="FondoFotoExperiences">
-                                    <v-img
+                                    <img
                                         class="Foto"
                                         :src="src"
-                                    ></v-img>
+                                    />
                                     <h3 class="white--text nameExperiens" >{{Name}}</h3>
                                 </div>
                                 <p class="Testiminio mt-2">{{Desc}}</p>
@@ -30,7 +30,7 @@
         </v-row>
     </v-container>
 </template>
-<style >
+<style>
 .slick-prev:before {
     content: url('../static/Images/chevron-left.png');
     /* color: #395730 !important; */
@@ -44,17 +44,18 @@
 <script>
 import VueSlickCarousel from 'vue-slick-carousel'
 import 'vue-slick-carousel/dist/vue-slick-carousel.css'
+import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
   export default {
      components: { VueSlickCarousel },
      data(){
         return{
             sliderData: [
-                {src: "/Images/Galeria/foto1.png",Name:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam'},
-                {src: "/Images/Galeria/foto1.png",Name:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam'},
-                {src: "/Images/Galeria/foto1.png",Name:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam'},
+                {src: '/Images/Galeria/foto1.png', Name:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam'},
+                {src: '/Images/Galeria/foto1.png', Name:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam'},
+                {src: '/Images/Galeria/foto1.png', Name:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam'}
     
             ],
-            settings  :{
+            settingsExperiences:{
                 arrows: true,
                 dots: false,
                 autoplay: true,
@@ -75,7 +76,17 @@ import 'vue-slick-carousel/dist/vue-slick-carousel.css'
                     {
                     "breakpoint": 414,
                         "settings": {
-                            arrows: false,
+                            "arrows": false,
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": false
+                        }
+                    },
+                    {
+                    "breakpoint": 375,
+                        "settings": {
+                            "arrows": false,
                             "slidesToShow": 1,
                             "slidesToScroll": 1,
                             "infinite": true,

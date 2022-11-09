@@ -8,7 +8,7 @@
                         <p class="textAbaut">Somos una hacienda agroturística, ubicada en la ruta Amanecer Llanero, rodeada de naturaleza que busca ofrecer una experiencia diferente de desconexión y relax .</p>
                     </v-col>
                     <v-col>
-                        <iframe src="" frameborder="0"></iframe>
+                        <v-img src="/Images/Galeria/foto1.png"></v-img>
                     </v-col>            
                 </v-row>
             </v-col>

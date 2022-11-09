@@ -26,13 +26,13 @@
                         <h3>ALIADOS:</h3>
                     </v-col>
                     <v-col justify="center" align="center" cols="12" lg="3" md="3" sm="3">
-                        <v-img src="/Images/ecopetrol.png" max-width="100"  alt="" srcset=""/>
+                        <img src="../static/Images/ecopetrol.png" max-width="100"  alt="" srcset=""/>
                     </v-col>
                     <v-col justify="center" align="center" cols="12" lg="3" md="3" sm="3">
-                        <v-img src="/Images/Creame.png" max-width="100"  alt="" srcset=""/>
+                        <img src="../static/Images/Creame.png" max-width="100"  alt="" srcset=""/>
                     </v-col>
                     <v-col justify="center" align="center" cols="12" lg="3" md="3" sm="3">
-                        <v-img src="/Images/villavicencio.png" max-width="100"  alt="" srcset=""/>
+                        <img src="../static/Images/villavicencio.png" max-width="100"  alt="" srcset=""/>
                     </v-col>
                 </v-row>
             </v-col>

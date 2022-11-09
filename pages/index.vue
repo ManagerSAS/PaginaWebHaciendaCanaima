@@ -5,12 +5,12 @@
     <MobileNavigation/>
     <Welcome/>
     <Gallery/>
+    <Services class="mt-5" style="background-color: #eff5de"/>
+    <About />
+    <Experiences class="mt-5" style="background-color: #eff5de"/>
+    <Contact />
     <CallToAction class="mt-5" style="background-color: #eff5de"/>
-    <Services/>
-    <About class="mt-5" style="background-color: #eff5de"/>
-    <Experiences/>
-    <Contact class="mt-5" style="background-color: #eff5de"/>
-    <Footer/>
+    <Footer />
   </div>
 </template>
 

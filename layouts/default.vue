@@ -1,9 +1,11 @@
 <template>
   <v-app>
     <v-main>	
-          <Nuxt />
+      <client-only>
+        <Nuxt />
+      </client-only>
     </v-main>
-</v-app>
+  </v-app>
 </template>
 
 

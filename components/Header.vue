@@ -7,7 +7,7 @@
                     <div class="col-xl-2 col-auto order-0">
                         <div class="header-logo">
                             <n-link to="/">
-                                <nuxt-img format="png" loading="lazy" placeholder="/Images/LogoHeader.png"  sizes="sm:100vw md:50vw lg:400px" quality="70" fit="cover"  src="/Images/LogoHeader.png" alt="Agency Logo"/>
+                                <img format="png" loading="lazy"  sizes="sm:100vw md:50vw lg:400px" quality="70" fit="cover"  :src="logo" alt="Agency Logo"/>
                             </n-link>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                             </nav>
                         </div>
                 
-                        <div class="header-mobile-menu-toggle d-xl-none ml-sm-2">
+                        <div class="header-mobile-menu-toggle d-xl-none d-md-none ml-sm-2 mt-5">
                             <button aria-label="Menu hamburguesa " class="toggle" @click="mobiletoggleClass('addClass', 'show-mobile-menu')">
                                 <i class="icon-top"></i>
                                 <i class="icon-middle"></i>
@@ -53,6 +53,11 @@
 
 <script>
     export default {
+        data(){
+            return{
+                logo:'/Images/LogoHeader.png'
+            }
+        },
         methods: {
             // offcanvas mobile menu
             mobiletoggleClass(addRemoveClass, className) {

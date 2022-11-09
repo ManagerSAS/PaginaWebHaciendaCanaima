@@ -1,6 +1,6 @@
 <template>
     <div class="intro-slider">
-        <VueSlickCarousel v-bind="settings" :arrows="false"  justify="center" align="center">
+        <VueSlickCarousel v-bind="settingsWelcome" :arrows="false"  justify="center" align="center">
             <div  v-for="(banner, index) in sliderData" :key="index" >
                 <div class="intro-section overlay bg-cover" :style="{ backgroundImage: `url(${banner.bgImgSrc})` }">
                     <div class="container">
@@ -23,7 +23,7 @@
         </VueSlickCarousel>
     </div>
 </template>
-<style lang="scss">
+<style >
 .slick-dots {
   background-color: transparent;
   position: relative;
@@ -64,7 +64,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
                 },
 
             ],
-            settings  :{
+            settingsWelcome:{
                 "dots": true,
                 "autoplay": true,
                 "infinite": true,

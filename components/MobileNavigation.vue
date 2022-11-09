@@ -5,7 +5,7 @@
             <div class="mobile-header">
                 <div class="header-logo">
                     <n-link class="logo" to="/">
-                        <nuxt-img format="webp" loading="lazy" placeholder="/MiTarjetaDigital/Images/Logo-Manager.webp"  quality="70" fit="cover" src="/MiTarjetaDigital/Images/Logo-Manager.webp" alt="Agency Logo"></nuxt-img>
+                        <img format="png" loading="lazy"  sizes="sm:100vw md:50vw lg:400px" quality="70" fit="cover"  :src="logo" alt="Agency Logo"/>
                     </n-link>
                 </div>
                 <button class="mobile-close-btn" @click="mobiletoggleClass('removeClass', 'show-mobile-menu')"></button>
@@ -39,6 +39,11 @@
 
 <script>
     export default {
+        data(){
+            return{
+                logo:'/Images/LogoHeader.png'
+            }
+        },
         mounted() {
             const offCanvasNav = document.querySelector('#offcanvas-navigation');
             const offCanvasNavSubMenu = offCanvasNav.querySelectorAll('.sub-menu');
