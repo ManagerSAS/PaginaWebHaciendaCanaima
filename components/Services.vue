@@ -50,14 +50,14 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
                 {src: '/Images/Galeria/foto1.png', NameService:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. x ea commodo consequat'}
             ],
             settingsServices:{
-                arrows: true,
-                dots: false,
-                autoplay: true,
-                infinite: true,
-                autoplaySpeed: 4000,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                responsive: [
+                "arrows": true,
+                "dots": false,
+                "autoplay": true,
+                "infinite": true,
+                "autoplaySpeed": 4000,
+                "slidesToShow": 1,
+                "slidesToScroll": 1,
+                "responsive": [
                     {
                     "breakpoint": 425,
                         "settings": {
@@ -87,6 +87,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
                     {
                     "breakpoint": 720,
                         "settings": {
+                            "arrows": false,
                             "arrows": false,
                             "infinite": true,
                             "dots": false

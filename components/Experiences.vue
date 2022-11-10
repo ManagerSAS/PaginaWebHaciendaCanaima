@@ -56,14 +56,14 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
     
             ],
             settingsExperiences:{
-                arrows: true,
-                dots: false,
-                autoplay: true,
-                infinite: true,
-                autoplaySpeed: 4000,
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                responsive: [
+                "arrows": true,
+                "dots": false,
+                "autoplay": true,
+                "infinite": true,
+                "autoplaySpeed": 4000,
+                "slidesToShow": 2,
+                "slidesToScroll": 1,
+                "responsive": [
                     {
                     "breakpoint": 1024,
                         "settings": {
@@ -71,6 +71,16 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
                             "slidesToScroll": 1,
                             "infinite": true,
                             "dots": true
+                        }
+                    },
+                    {
+                    "breakpoint": 425,
+                        "settings": {
+                            "arrows": false,
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": false
                         }
                     },
                     {

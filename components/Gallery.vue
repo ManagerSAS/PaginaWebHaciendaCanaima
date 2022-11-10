@@ -6,16 +6,15 @@
             </h1>
         </div>
         <v-row justify="center" align="center">
-            <v-col cols="12" xl="10" lg="8" md="10" sm="12">
-                <VueSlickCarousel v-bind="settingsGallery"  justify="center" align="center">
-                    <div justify="center" align="center" v-for="(src, index) in sliderData" :key="index" >
+            <v-col cols="12" xl="10" lg="10" md="10" sm="12">
+                <v-slide-group show-arrows justify="center" align="center">
+                    <v-slide-item justify="center" align="center" v-for="(src, index) in sliderData" :key="index" >
                         <v-img
-                            class="rounded-xl"  width="70%" 
-                            :lazy-src="src"
+                            class="ma-lg-5 ma-sm-2"
                             :src="src"
-                        ></v-img><br>
-                    </div>
-                </VueSlickCarousel>   
+                        />
+                    </v-slide-item>
+                </v-slide-group>   
                 <div justify="center" align="center">
                     <button aria-label="RESERVA CON NOSOTROS" aria-hidden="true" to="/" class="ml-lg-15 mt-lg-15 btn-hover pa-1 pl-2 pr-2">RESERVA CON NOSOTROS</button>
                 </div>   
@@ -71,6 +70,16 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
                     },
                     {
                     "breakpoint": 414,
+                        "settings": {
+                            "arrows": false,
+                            "slidesToShow": 1,
+                            "slidesToScroll": 1,
+                            "infinite": true,
+                            "dots": false
+                        }
+                    },
+                    {
+                    "breakpoint": 425,
                         "settings": {
                             "arrows": false,
                             "slidesToShow": 1,
