@@ -1,5 +1,5 @@
 <template>
-    <div class="header-section" >
+    <div class="header-section header-transparent" :class="{'is-sticky': isSticky}">
         <div class="header-inner">
             <div class="container position-relative">
                 <div class="row justify-content-between align-items-center">
@@ -15,23 +15,23 @@
                     <v-spacer></v-spacer>
                     <!-- Header Main Menu Start -->
                     <div class="col-auto col-xl d-flex align-items-center justify-content-xl-left justify-content-end order-2 order-xl-1">
-                        <div class="menu-column-area d-none d-xl-block d-lg-block  position-static">
+                        <div class="menu-column-area d-none d-xl-block d-lg-block position-static">
                             <nav class="site-main-menu">
                                 <ul>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#Advantage">Galeria </n-link>
+                                        <n-link style="text-decoration: none" to="#galeria">Galeria </n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#Presentation">Planes y Actividades</n-link>
+                                        <n-link style="text-decoration: none" to="#services">Planes y Actividades</n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#Plans">Quiénes somos </n-link>
+                                        <n-link style="text-decoration: none" to="#about">Quiénes somos </n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#Tarjeta">Experiencias</n-link>
+                                        <n-link style="text-decoration: none" to="#experiencas">Experiencias</n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#Questions">Contacto</n-link>
+                                        <n-link style="text-decoration: none" to="#contacto">Contacto</n-link>
                                     </li>
                                 </ul>
                             </nav>
@@ -55,8 +55,19 @@
     export default {
         data(){
             return{
-                logo:'/Images/LogoHeader.png'
+                logo:'/Images/LogoHeader.png',
+                isSticky: false,
             }
+        },
+        mounted(){
+            window.addEventListener('scroll', () => {
+                let scrollPos = window.scrollY
+                if(scrollPos >= 200){
+                    this.isSticky = true
+                } else {
+                    this.isSticky = false
+                }
+            })
         },
         methods: {
             // offcanvas mobile menu

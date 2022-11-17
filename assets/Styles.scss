@@ -5,19 +5,31 @@
     border-radius: 15px 0 0 15px;
     z-index: 10; 
     right: 0; 
+    top: 10%;
     @media #{$small-mobile, $extra-small-mobile}{
         max-width: 55px;
         opacity: 0.7;
-
     }
-  }
-
+}
+.ImagenAbaut{
+    margin: 10px 10px 10px 10px ;
+    width: 100%;
+    max-width: 500px;
+    min-width: 200px;
+}
 .Whatsapp{
     background-image: url('../static/Images/Whatsapp.png');
     background-repeat:no-repeat;
     display: block;
     height: 35px;
     width: 35px;
+}
+.Comentarios{
+    background-image: url('../static/Images/Comentarios.png');
+    background-repeat:no-repeat;
+    display: block;
+    height: 50px;
+    width: 50px;
 }
 .Facebook{
     background-image: url('../static/Images/Facebook.png');
@@ -131,6 +143,7 @@
     max-width: 210px; 
 }
 .Foto{
+    width: 200px;
     border: 5px solid #395730;   
     margin-top: auto;
     display: flex;
@@ -151,6 +164,7 @@
     border-color: #395730 !important;
 }
 .logoBanner{
+    background-position: center;
     width: 400px;
     @media #{$small-mobile, $extra-small-mobile}{
         width: 300px;

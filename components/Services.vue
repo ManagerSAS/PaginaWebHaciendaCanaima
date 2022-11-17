@@ -1,5 +1,5 @@
 <template>
-    <v-container fluid>
+    <v-container fluid id="services">
         <v-row justify="center" align="center">
             <v-col cols="12" xl="8" lg="8" md="10" sm="12">
                 <VueSlickCarousel class="ma-10 containerService" v-bind="settingsServices"  justify="center" align="center">
@@ -7,19 +7,20 @@
                         <v-row  >
                             <v-col cols="12" sm="12" md="6" lg="6">
                                 <img
-                                     max-width="250" 
+                                    width="80%" 
                                     :src="src"
                                 />
                             </v-col>
-                            <v-col class="textServices" align="start" cols="12" sm="12" md="6" lg="6">
-                                <h2>{{NameService}}</h2>
+                            <v-col class="textServices" justify="center" align="start" cols="12" sm="12" md="6" lg="6">
+                                <h2>{{NameService}}</h2><br>
+                                <h4>Incluye</h4><br>
                                 <p>{{Desc}}</p>
                             </v-col>
                         </v-row>
                     </div>
                 </VueSlickCarousel>   
-                <div justify="center" align="center">
-                    <v-btn class="rounded-lg white--text" color="#95bd20" >RESERVA CON NOSOTROS</v-btn>
+                <div justify="start" align="center" class="mb-5">
+                    <v-btn class="rounded-lg white--text" color="#95bd20" >Reservar</v-btn>
                 </div>   
             </v-col>
         </v-row>
@@ -45,9 +46,10 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
      data(){
         return{
             sliderData: [
-                {src: '/Images/Galeria/foto1.png', NameService:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. x ea commodo consequat'},
-                {src: '/Images/Galeria/foto1.png', NameService:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. x ea commodo consequat'},
-                {src: '/Images/Galeria/foto1.png', NameService:'PLANES Y ACTIVIDADES', Desc:'Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. x ea commodo consequat'}
+                {src: '/Images/Galeria/foto1.png', NameService:'PLAN ALOJAMIENTO CANAIMA FAMILIAR', Desc:'Alojamiento no incluye desayuno, Grupos de  5 a 13 pax, Parqueadero, WIFI, Tarjeta de asistencia médica, Capacidad máxima familiar 13 personas, Uso de piscina, Cancha de micro, Cancha de voley, Servicio de auxiliar de cocina opcional (costo adicional)'},
+                {src: '/Images/Galeria/foto2.png', NameService:'PLAN ALOJAMIENTO CANAIMA PAREJAS', Desc:'Alojamiento incluye desayuno, A Partir de 2 a 4 pax, Parqueadero, WIFI, Tarjeta de asistencia médica, Capacidad máxima familiar 13 personas, Uso de piscina, Cancha de micro, Cancha de voley, Servicio de auxiliar de cocina opcional (costo adicional).'},
+                {src: '/Images/Galeria/foto3.png', NameService:'BIRDING TOUR CON ALOJAMIENTO', Desc:'Alojamiento 1D +1N ,Desayuno + refrigerios + almuerzo ,Uso de piscina ,Cancha de micro ,Cancha de voley ,Guía especializado ,Tour de observación y fotografía en caminata por los senderos ,Recorrido en tractor hasta la reserva ,Tarjeta de asistencia médica'},
+                {src: '/Images/Galeria/foto4.png', NameService:'PASADIA BIRDING TOUR', Desc:'Guianza especializada ,Refrigerio ,Hidratación ,Almuerzo ,Tarjeta de asistencia médica ,Uso de piscina ,Cancha de micro ,Cancha de voley ,Tour de observación y fotografía en caminata por los senderos ,Recorrido en tractor hasta la reserva ,Grupos a partir de 10 pax máximo 20.'},
             ],
             settingsServices:{
                 "arrows": true,

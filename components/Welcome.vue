@@ -1,26 +1,26 @@
 <template>
     <div class="intro-slider">
-        <VueSlickCarousel v-bind="settingsWelcome" :arrows="false"  justify="center" align="center">
-            <div  v-for="(banner, index) in sliderData" :key="index" >
-                <div class="intro-section overlay bg-cover" :style="{ backgroundImage: `url(${banner.bgImgSrc})` }">
+        <!-- <VueSlickCarousel v-bind="settingsWelcome" :arrows="false"  justify="center" align="center"> -->
+            <!-- <div  v-for="(banner, index) in sliderData" :key="index" > -->
+                <div class="intro-section overlay bg-cover" style="background-image: url('/Images/BANNER1.png')">
                     <div class="container">
                         <v-row justify="center" align="center">
                             <v-col  justify="center" align="center" >
                                 <div class="intro-content m-auto text-center">
-                                    <div justify="center" align="center"  class="pb-lg-15 mb-lg-15">
-                                        <img class="logoBanner" :src="banner.logo" alt="logo hacienda canaima">
+                                    <div justify="center" align="center" >
+                                        <img class="logoBanner" src="/Images/LogoGrande.png" alt="logo hacienda canaima">
                                     </div>
-                                    <div class="titulo mt-lg-15 pt-lg-15">
-                                        <p style="font-weight: 500">{{banner.text}}</p>
+                                    <div justify="center" align="center" class="titulo">
+                                        <p style="font-weight: 500">DONDE EL BIENESTAR Y LA NATURALEZA SE CONECTAN</p>
+                                        <a href="https://api.whatsapp.com/send?phone=573114851304&text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20Hacienda%20Canaima%201" target="_blank" rel="noopener noreferrer"><button aria-label="RESERVA CON NOSOTROS" aria-hidden="true"  class="mt-lg-15 btn-hover pa-1 pl-2 pr-2">RESERVA CON NOSOTROS</button></a>
                                     </div>
-                                    <button aria-label="RESERVA CON NOSOTROS" aria-hidden="true" to="/" class="ml-lg-15 mt-lg-15 btn-hover pa-1 pl-2 pr-2">RESERVA CON NOSOTROS</button>
                                 </div>
                             </v-col>
                         </v-row>
                     </div>
                 </div>
-                </div>
-        </VueSlickCarousel>
+                <!-- </div> -->
+        <!-- </VueSlickCarousel> -->
     </div>
 </template>
 <style >

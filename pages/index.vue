@@ -4,12 +4,14 @@
     <RedesSociales/>
     <MobileNavigation/>
     <Welcome/>
-    <Gallery/>
-    <Services class="mt-5" style="background-color: #eff5de"/>
+    <Gallery class="mt-5 mb-5"/>
+    <Services class="mt-5 mb-5" style="background-color: #eff5de"/>
     <About />
-    <Experiences class="mt-5" style="background-color: #eff5de"/>
-    <Contact />
-    <CallToAction class="mt-5" style="background-color: #eff5de"/>
+    <Experiences class="mt-5 mb-5" style="background-color: #eff5de"/>
+    <Contact class="mt-5 mb-5"/>
+    <CallToAction class="mt-5 mb-5" style="background-color: #eff5de"/>
+    <Comments />
+    <Politicas/>
     <Footer />
   </div>
 </template>
@@ -27,6 +29,9 @@ import Experiences from "~/components/Experiences.vue";
 import Contact from "~/components/Contact.vue";
 import MobileNavigation from "~/components/MobileNavigation.vue";
 import RedesSociales from "~/components/RedesSociales.vue";
+import Comments from "~/components/Comments.vue";
+import Politicas from "~/components/Politicas.vue";
+
 
 export default {
   components:{
@@ -40,7 +45,9 @@ export default {
     Experiences,
     Contact,
     MobileNavigation,
-    RedesSociales
+    RedesSociales,
+    Comments,
+    Politicas
 }
 }
 </script>

@@ -15,19 +15,19 @@
                     <nav class="offcanvas-navigation" id="offcanvas-navigation">
                         <ul>
                             <li>
-                                <n-link style="text-decoration: none" to="#Advantage">Galeria </n-link>
+                                <n-link style="text-decoration: none" to="#galeria">Galeria </n-link>
                             </li>
                             <li>
-                                <n-link style="text-decoration: none" to="#Presentation">Planes y Actividades</n-link>
+                                <n-link style="text-decoration: none" to="#services">Planes y Actividades</n-link>
                             </li>
                             <li>
-                                <n-link style="text-decoration: none" to="#Plans">Quiénes somos </n-link>
+                                <n-link style="text-decoration: none" to="#about">Quiénes somos </n-link>
                             </li>
                             <li>
-                                <n-link style="text-decoration: none" to="#Tarjeta">Experiencias</n-link>
+                                <n-link style="text-decoration: none" to="#experiencas">Experiencias</n-link>
                             </li>
                             <li>
-                                <n-link style="text-decoration: none" to="#Questions">Contacto</n-link>
+                                <n-link style="text-decoration: none" to="#contacto">Contacto</n-link>
                             </li>
                         </ul>
                     </nav>

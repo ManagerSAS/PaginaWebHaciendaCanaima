@@ -31,7 +31,7 @@ export default ({
         return{
             readonly: false,
             preguntas: [
-                {pregunta:'1. ¿Puede cancelar mi reservación? Si cancelo, ¿Hay alguna multa?', respuesta:'¡Claro que sí! Podrás integrar todas las redes sociales que tu empresa necesita, tendrás una estructura habilitada para incorporar cada una de ellas e interactuar directamente con tus clientes'},
+                {pregunta:'1. ¿Puede cancelar mi reservación? Si cancelo, ¿Hay alguna multa?', respuesta:'Se aplica la política para cancelación de reservas  previamente garantizadas :En caso de incumplimiento por parte del CLIENTE y cancelación de la reservación y garantizado por la Hacienda Canaima 1 Agroturística (Revisar politicas)'},
                 {pregunta:'2. ¿Puedo cancelar por fuerza mayor? ¿Qué debo hacer? ¿Cuanto de anticipación puedo hacerlo?', respuesta:'Las razones consideradas fuerza mayor son: calamidad doméstica, enfermedad o lesión grave, cambio de destino turístico. Para validar este parámetro debe existir evidencia demostrable de la condición. La anticipación depende del tipo de calamidad y el usuario se hará responsable de los costos administrativos.'},
                 {pregunta:'3. ¿Cómo puedo acceder a otros planes?', respuesta:'Al momento de realizar contacto con Canaima , estaremos listos para asesorar su experiencia y le suministraremos toda la información.'},
                 {pregunta:'4. ¿Cuánto tiempo de anticipación debo reservar? ', respuesta:'Dependiendo de la temporada , el tiempo sugerido es de 24 horas antes de la fecha de llegada.'},
