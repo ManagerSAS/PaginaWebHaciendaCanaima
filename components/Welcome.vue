@@ -1,26 +1,52 @@
 <template>
-    <div class="intro-slider">
-        <!-- <VueSlickCarousel v-bind="settingsWelcome" :arrows="false"  justify="center" align="center"> -->
-            <!-- <div  v-for="(banner, index) in sliderData" :key="index" > -->
-                <div class="intro-section overlay bg-cover" style="background-image: url('/Images/BANNER1.png')">
-                    <div class="container">
-                        <v-row justify="center" align="center">
-                            <v-col  justify="center" align="center" >
-                                <div class="intro-content m-auto text-center">
-                                    <div justify="center" align="center" >
-                                        <img class="logoBanner" src="/Images/LogoGrande.png" alt="logo hacienda canaima">
+    <div>
+
+        <div class="intro-slider d-none d-md-block d-lg-block d-xl-block">
+            <VueSlickCarousel v-bind="settingsWelcome" :arrows="false"  justify="center" align="center"> -->
+                <div  v-for="({bgImgSrc}, index) in sliderData" :key="index" >
+                    <div class="intro-section bg-cover" :style="{backgroundImage: `url(${bgImgSrc})`,imageRendering: 'auto'}">
+                        <div class="container">
+                            <!-- <v-row justify="center" align="center">
+                                <v-col  justify="center" align="center" >
+                                    <div class="intro-content m-auto text-center">
+                                        <div justify="center" align="center" >
+                                            <img class="logoBanner" src="/Images/LogoGrande.png" alt="logo hacienda canaima">
+                                        </div>
+                                        <div justify="center" align="center" class="titulo">
+                                            <p style="font-weight: 500">DONDE EL BIENESTAR Y LA NATURALEZA SE CONECTAN</p>
+                                            <a href="https://api.whatsapp.com/send?phone=573114851304&text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20Hacienda%20Canaima%201" target="_blank" rel="noopener noreferrer"><button aria-label="RESERVA CON NOSOTROS" aria-hidden="true"  class="mt-lg-15 btn-hover text-capitalize pa-1 pl-2 pr-2">Reserva con nosotros</button></a>
+                                        </div>
                                     </div>
-                                    <div justify="center" align="center" class="titulo">
-                                        <p style="font-weight: 500">DONDE EL BIENESTAR Y LA NATURALEZA SE CONECTAN</p>
-                                        <a href="https://api.whatsapp.com/send?phone=573114851304&text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20Hacienda%20Canaima%201" target="_blank" rel="noopener noreferrer"><button aria-label="RESERVA CON NOSOTROS" aria-hidden="true"  class="mt-lg-15 btn-hover text-capitalize pa-1 pl-2 pr-2">Reserva con nosotros</button></a>
-                                    </div>
-                                </div>
-                            </v-col>
-                        </v-row>
+                                </v-col>
+                            </v-row> -->
+                        </div>
                     </div>
-                </div>
-                <!-- </div> -->
-        <!-- </VueSlickCarousel> -->
+                    </div>
+            </VueSlickCarousel>
+        </div>
+        <div class="intro-slider d-block d-md-none d-lg-none d-xl-none">
+            <VueSlickCarousel v-bind="settingsWelcome" :arrows="false"  justify="center" align="center"> -->
+                <div  v-for="({bgImgSrc}, index) in sliderDataCel" :key="index" >
+                    <div class="intro-section bg-cover" :style="{backgroundImage: `url(${bgImgSrc})`,imageRendering: 'auto'}">
+                        <div class="container">
+                            <!-- <v-row justify="center" align="center">
+                                <v-col  justify="center" align="center" >
+                                    <div class="intro-content m-auto text-center">
+                                        <div justify="center" align="center" >
+                                            <img class="logoBanner" src="/Images/LogoGrande.png" alt="logo hacienda canaima">
+                                        </div>
+                                        <div justify="center" align="center" class="titulo">
+                                            <p style="font-weight: 500">DONDE EL BIENESTAR Y LA NATURALEZA SE CONECTAN</p>
+                                            <a href="https://api.whatsapp.com/send?phone=573114851304&text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20Hacienda%20Canaima%201" target="_blank" rel="noopener noreferrer"><button aria-label="RESERVA CON NOSOTROS" aria-hidden="true"  class="mt-lg-15 btn-hover text-capitalize pa-1 pl-2 pr-2">Reserva con nosotros</button></a>
+                                        </div>
+                                    </div>
+                                </v-col>
+                            </v-row> -->
+                        </div>
+                    </div>
+                    </div>
+            </VueSlickCarousel>
+        </div>
     </div>
 </template>
 <style >
@@ -52,15 +78,25 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
         return{
             sliderData: [
                 {
-                    logo: "/Images/LogoGrande.png",
-                    text: "DONDE EL BIENESTAR Y LA NATURALEZA SE CONECTAN",
-                    bgImgSrc: "/Images/BANNER1.png"
+                    bgImgSrc: "/Images/banners/BannerPc1.jpg"
 
                 },
                 {
-                    logo: "/Images/LogoGrande.png",
-                    text: "DONDE EL BIENESTAR Y LA NATURALEZA SE CONECTAN",
-                    bgImgSrc: "/Images/BANNER2.png"
+                    bgImgSrc: "/Images/banners/BannerPc2.jpg"
+                },
+                {
+                    bgImgSrc: "/Images/banners/BannerPc3.jpg"
+                },
+            ],
+            sliderDataCel: [
+                {
+                    bgImgSrc: "/Images/banners/BannerCel1.jpg"
+                },
+                {
+                    bgImgSrc: "/Images/banners/BannerCel2.jpg"
+                },
+                {
+                    bgImgSrc: "/Images/banners/BannerCel3.jpg"
                 },
 
             ],

@@ -1,10 +1,10 @@
 <template>
   <v-app>
-    <v-main>	
-      <client-only>
-        <Nuxt />
-      </client-only>
-    </v-main>
+    <client-only>
+        <v-main>	
+          <Nuxt />
+        </v-main>
+    </client-only>
   </v-app>
 </template>
 

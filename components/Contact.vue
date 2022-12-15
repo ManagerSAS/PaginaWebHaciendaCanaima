@@ -129,7 +129,7 @@
                             </v-col>
                         </v-row>
                     <div justify="center" align="center">
-                        <v-btn class="rounded-lg white--text" color="#95bd20" @click="SendMessage">Enivar formulario</v-btn>
+                        <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" @click="SendMessage">Enivar formulario</v-btn>
                     </div>
                 </v-form>
             </v-col>

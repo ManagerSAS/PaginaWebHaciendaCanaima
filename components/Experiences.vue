@@ -17,7 +17,7 @@
                                         class="Foto"
                                         :src="Foto"
                                     />
-                                    <img class="Foto" v-else src="../static/Images/Galeria/foto1.png" alt="" srcset="">
+                                    <img class="Foto" v-else src="../static/Images/QuienesSomos.png" alt="" srcset="">
                                     <h3 class="white--text nameExperiens" >{{Nombre}}</h3>
                                     <v-rating
                                         background-color="grey lighten-2"
@@ -38,7 +38,7 @@
                     </div>
                 </VueSlickCarousel>   
                 <div justify="center" align="center">
-                    <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" >Cotiza con nosotros</v-btn>
+                    <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" >Cotiza<span class="text-lowercase">&nbsp;con&nbsp;</span>nosotros</v-btn>
                 </div>   
             </v-col>
         </v-row>

@@ -11,11 +11,11 @@
                     <v-expansion-panel 
                         :readonly="readonly"
                         multiple 
-                        height="200"
+                        height="150"
                         v-for="({pregunta,respuesta},index) in preguntas"
                         :key="index"
-                        class="mb-6 text-blue-f-1em">
-                        <v-expansion-panel-header style="color:#395730;" class="ma-3">{{pregunta}}</v-expansion-panel-header>
+                        class="mb-4 text-blue-f-1em">
+                        <v-expansion-panel-header style="color:#395730;" class="my-2">{{pregunta}}</v-expansion-panel-header>
                         <v-expansion-panel-content>
                             {{respuesta}}
                         </v-expansion-panel-content>

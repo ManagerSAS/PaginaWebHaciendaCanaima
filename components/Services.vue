@@ -7,7 +7,7 @@
                         <v-row justify="center" align="center" >
                             <v-col class="mt-8" cols="12" sm="12" md="6" lg="6">
                                 <v-img
-                                    width="80%" 
+                                    width="350" 
                                     :src="src"
                                 />
                             </v-col>
@@ -46,10 +46,10 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
      data(){
         return{
             sliderData: [
-                {src: '/Images/Galeria/foto1.png', NameService:'PLAN ALOJAMIENTO CANAIMA FAMILIAR', Desc:'Alojamiento no incluye desayuno, Grupos de  5 a 13 pax, Parqueadero, WIFI, Tarjeta de asistencia médica, Capacidad máxima familiar 13 personas, Uso de piscina, Cancha de micro, Cancha de voley, Servicio de auxiliar de cocina opcional (costo adicional)'},
-                {src: '/Images/Galeria/foto2.png', NameService:'PLAN ALOJAMIENTO CANAIMA PAREJAS', Desc:'Alojamiento incluye desayuno, A Partir de 2 a 4 pax, Parqueadero, WIFI, Tarjeta de asistencia médica, Capacidad máxima familiar 13 personas, Uso de piscina, Cancha de micro, Cancha de voley, Servicio de auxiliar de cocina opcional (costo adicional).'},
-                {src: '/Images/Galeria/foto3.png', NameService:'BIRDING TOUR CON ALOJAMIENTO', Desc:'Alojamiento 1D +1N ,Desayuno + refrigerios + almuerzo ,Uso de piscina ,Cancha de micro ,Cancha de voley ,Guía especializado ,Tour de observación y fotografía en caminata por los senderos ,Recorrido en tractor hasta la reserva ,Tarjeta de asistencia médica'},
-                {src: '/Images/Galeria/foto4.png', NameService:'PASADIA BIRDING TOUR', Desc:'Guianza especializada ,Refrigerio ,Hidratación ,Almuerzo ,Tarjeta de asistencia médica ,Uso de piscina ,Cancha de micro ,Cancha de voley ,Tour de observación y fotografía en caminata por los senderos ,Recorrido en tractor hasta la reserva ,Grupos a partir de 10 pax máximo 20.'},
+                {src: '/Images/Plans/BirdingAlojamiento.png', NameService:'PLAN ALOJAMIENTO CANAIMA FAMILIAR', Desc:'Alojamiento no incluye desayuno, Grupos de  5 a 13 pax, parqueadero, WIFI, tarjeta de asistencia médica, capacidad máxima familiar 13 personas, uso de piscina, cancha de micro, cancha de voley, servicio de auxiliar de cocina opcional (costo adicional)'},
+                {src: '/Images/Plans/Parejas.png', NameService:'PLAN ALOJAMIENTO CANAIMA PAREJAS', Desc:'Alojamiento incluye desayuno, a partir de 2 a 4 pax, parqueadero, WIFI, tarjeta de asistencia médica, Capacidad máxima familiar 13 personas, Uso de piscina, Cancha de micro, Cancha de voley, Servicio de auxiliar de cocina opcional (costo adicional).'},
+                {src: '/Images/Plans/BirdingTour.png', NameService:'BIRDING TOUR CON ALOJAMIENTO', Desc:'Alojamiento 1D + 1N, Desayuno + refrigerios + almuerzo, uso de piscina, cancha de micro, cancha de voley, guía especializado, tour de observación y fotografía en caminata por los senderos, recorrido en tractor hasta la reserva, tarjeta de asistencia médica'},
+                {src: '/Images/Plans/Planfamiliar.png', NameService:'PASADIA BIRDING TOUR', Desc:'Guianza especializada, refrigerio, hidratación, almuerzo, tarjeta de asistencia médica, uso de piscina, cancha de micro, cancha de voley, tour de observación y fotografía en caminata por los senderos, recorrido en tractor hasta la reserva, grupos a partir de 10 pax máximo 20.'},
             ],
             settingsServices:{
                 "arrows": true,

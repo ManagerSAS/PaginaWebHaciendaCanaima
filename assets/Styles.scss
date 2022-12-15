@@ -1,4 +1,9 @@
+@font-face {
+    font-family: 'Gotham', sans-serif;
+    src: url('https://fonts.cdnfonts.com/css/gotham');
+}
 .flotante{
+    font-family: 'Gotham', sans-serif;
     background-color: #fff;
     max-width: 80px;
     position: fixed;
@@ -7,8 +12,8 @@
     right: 0; 
     top: 15%;
     @media #{$small-mobile, $extra-small-mobile}{
-        max-width: 55px;
-        opacity: 0.7;
+        max-width: 50px;
+        top: 10%;
     }
 }
 .ImagenAbaut{
@@ -60,12 +65,12 @@
     width: 100%;
 }
 .btn-hover{
+    font-family: 'Gotham', sans-serif;
     border-radius: 10px;
     background-color: #95bd20;
     color: #fff;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
     @media #{$tablet-device, $large-mobile}{
         font-size: 20px;
     }
@@ -90,6 +95,7 @@
     font-size: 20px;
 }
 .titulos{
+    font-family: 'Gotham', sans-serif;
     color:#395730; 
     font-size: 33px;
     font-weight: 800;
@@ -98,6 +104,7 @@
     }
 }
 .containerCall{
+    font-family: 'Gotham', sans-serif;
     min-height: 250px;
     &.text{
         font-size: 25px;
@@ -106,6 +113,7 @@
     }
 }
 .textServices{
+    font-family: 'Gotham', sans-serif;
     display: block;
     align-items: center;
     min-height: 200px;
@@ -119,6 +127,7 @@
 }
 
 .titleAbaut{
+    font-family: 'Gotham', sans-serif;
     font-size:30px;
     font-weight: 900;
     color: #395730;
@@ -127,6 +136,7 @@
     }
 }
 .textAbaut{
+    font-family: 'Gotham', sans-serif;
     font-size:25px;
     font-weight: lighter;
     color: #395730;
@@ -151,15 +161,18 @@
     border-radius: 50%;
 }
 .nameExperiens{
+    font-family: 'Gotham', sans-serif;
     max-width: 200px; 
 }
 .Testiminio{
+    font-family: 'Gotham', sans-serif;
     font-size:18px;
     font-weight:normal;
     color: #395730;
     font-style: italic;
 }
 .input{
+    font-family: 'Gotham', sans-serif;
     font-style: italic;
     border-color: #395730 !important;
 }
@@ -169,4 +182,7 @@
     @media #{$small-mobile, $extra-small-mobile}{
         width: 300px;
     }
+}
+.text-gotham{
+    font-family: 'Gotham', sans-serif;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="text-gotham">
     <Header/>
     <RedesSociales/>
     <MobileNavigation/>

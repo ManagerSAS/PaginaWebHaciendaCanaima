@@ -43,14 +43,15 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
      data(){
         return{
             sliderData: [
-                {src:'./Images/Galeria/foto1.png'},
-                {src:'./Images/Galeria/foto2.png'},
-                {src:'./Images/Galeria/foto3.png'},
-                {src:'./Images/Galeria/foto4.png'},
-                {src:'./Images/Galeria/foto1.png'},
-                {src:'./Images/Galeria/foto2.png'},
-                {src:'./Images/Galeria/foto3.png'},
-                {src:'./Images/Galeria/foto4.png'}
+                {src:'./Images/Galeria/1.png'},
+                {src:'./Images/Galeria/2.png'},
+                {src:'./Images/Galeria/3.png'},
+                {src:'./Images/Galeria/4.png'},
+                {src:'./Images/Galeria/5.png'},
+                {src:'./Images/Galeria/6.png'},
+                {src:'./Images/Galeria/7.png'},
+                {src:'./Images/Galeria/8.png'},
+                {src:'./Images/Galeria/9.png'}
             ],
             settingsGallery: {
                 "dots": false,
