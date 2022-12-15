@@ -25,7 +25,7 @@
                                         <n-link style="text-decoration: none" to="#services">Planes y Actividades</n-link>
                                     </li>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#about">Quiénes somos </n-link>
+                                        <n-link style="text-decoration: none" to="#about">¿Quiénes somos? </n-link>
                                     </li>
                                     <li>
                                         <n-link style="text-decoration: none" to="#experiencas">Experiencias</n-link>
