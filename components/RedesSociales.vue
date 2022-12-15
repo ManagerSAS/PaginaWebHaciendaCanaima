@@ -4,6 +4,5 @@
         <a class="Facebook my-1" href="https://www.facebook.com/haciendacanaima1" target="_blank"/>
         <a class="Instagram my-1" href="https://www.instagram.com/haciendacanaima1" target="_blank"/>
         <a class="Booking my-1" href="https://acortar.link/pPkMcr" target="_blank" />
-        <a class="Tripadvisor my-1" href="/" target="_blank"/>
     </div>
 </template>
