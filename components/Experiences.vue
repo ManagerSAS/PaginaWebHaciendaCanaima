@@ -38,7 +38,7 @@
                     </div>
                 </VueSlickCarousel>   
                 <div justify="center" align="center">
-                    <v-btn class="rounded-lg white--text" color="#95bd20" >COTIZACON NOSOTROS</v-btn>
+                    <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" >Cotiza con nosotros</v-btn>
                 </div>   
             </v-col>
         </v-row>

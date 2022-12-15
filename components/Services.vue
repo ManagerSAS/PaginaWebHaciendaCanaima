@@ -4,15 +4,15 @@
             <v-col cols="12" xl="8" lg="8" md="10" sm="12">
                 <VueSlickCarousel class="ma-10 containerService" v-bind="settingsServices"  justify="center" align="center">
                     <div  justify="center" align="center" v-for="({src,NameService,Desc}, index) in sliderData" :key="index" >
-                        <v-row  >
-                            <v-col cols="12" sm="12" md="6" lg="6">
-                                <img
+                        <v-row justify="center" align="center" >
+                            <v-col class="mt-8" cols="12" sm="12" md="6" lg="6">
+                                <v-img
                                     width="80%" 
                                     :src="src"
                                 />
                             </v-col>
                             <v-col class="textServices" justify="center" align="start" cols="12" sm="12" md="6" lg="6">
-                                <h2>{{NameService}}</h2><br>
+                                <h2 >{{NameService}}</h2><br>
                                 <h4>Incluye</h4><br>
                                 <p>{{Desc}}</p>
                             </v-col>
@@ -20,7 +20,7 @@
                     </div>
                 </VueSlickCarousel>   
                 <div justify="start" align="center" class="mb-5">
-                    <v-btn class="rounded-lg white--text" color="#95bd20" >Reservar</v-btn>
+                    <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" >Reservar</v-btn>
                 </div>   
             </v-col>
         </v-row>

@@ -8,7 +8,7 @@
                 <h1 class="mb-6 mt-5 titulos">
                    ESTAMOS UBICADOS
                 </h1>
-                <h4>Km 38 vía Puerto López -Vereda Indostán Villavicencio, Meta, Colombia</h4>
+                <h4>Km 38 vía Puerto López - Vereda Indostán Villavicencio, Meta, Colombia</h4>
             </v-col>
             <v-col justify="center" align="center" cols="12" sm="12" md="3" lg="3">
                 <v-img src="/Images/LogoCertificado.png" max-width="150"  alt="" srcset=""/>
@@ -39,7 +39,7 @@
         </v-row>
         <v-row style="background-color: #eff5de">
             <v-col cols="12" justify="center" align="center">
-                <a href="https://agenciamanager.com/" target="_blanck" style="text-decoration: none;color: #395730; ">© Copyright 2022 | Desarrollado por Manager SAS</a>
+                <a href="https://agenciamanager.com/" target="_blanck" style="text-decoration: none;color: #395730; ">© Copyright 2022 | Desarrollado por Manager ~ El equipo para tu marca</a>
             </v-col>
         </v-row>
     </v-container>

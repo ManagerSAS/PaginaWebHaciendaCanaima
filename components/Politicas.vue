@@ -4,12 +4,11 @@
             class="v-btn--politicas elevation-5"
             fab
             dark
-            x-large
             color="#395730"
             @click="dialogPoliticas= true" 
             >
           <v-icon >
-            mdi-cookie-alert-outline  mdi-36px
+            mdi-cookie-outline  mdi-36px
           </v-icon>
         </v-btn>
         <v-dialog

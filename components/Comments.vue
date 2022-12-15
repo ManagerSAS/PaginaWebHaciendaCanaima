@@ -4,7 +4,6 @@
         class="v-btn--example elevation-5"
         fab
         dark
-        x-large
         color="#395730"
         @click="dialog= true"
     >

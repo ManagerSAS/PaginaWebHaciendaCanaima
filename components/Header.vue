@@ -19,7 +19,7 @@
                             <nav class="site-main-menu">
                                 <ul>
                                     <li>
-                                        <n-link style="text-decoration: none" to="#galeria">Galeria </n-link>
+                                        <n-link style="text-decoration: none" to="#galeria">Galería </n-link>
                                     </li>
                                     <li>
                                         <n-link style="text-decoration: none" to="#services">Planes y Actividades</n-link>

@@ -9,7 +9,7 @@
     <About />
     <Experiences class="mt-5 mb-5" style="background-color: #eff5de"/>
     <Contact class="mt-5 mb-5"/>
-    <CallToAction class="mt-5 mb-5" style="background-color: #eff5de"/>
+    <Frequents class="mt-5 mb-5" style="background-color: #eff5de"/>
     <Comments />
     <Politicas/>
     <Footer />
@@ -22,7 +22,7 @@ import Header from "~/components/Header.vue";
 import Footer from "~/components/Footer.vue";
 import Welcome from "~/components/Welcome.vue";
 import Gallery from "~/components/Gallery.vue";
-import CallToAction from "~/components/CallToAction.vue";
+import Frequents from "~/components/Frequents.vue";
 import Services from "~/components/Services.vue";
 import About from "~/components/About.vue";
 import Experiences from "~/components/Experiences.vue";
@@ -39,7 +39,7 @@ export default {
     Footer,
     Welcome,
     Gallery,
-    CallToAction,
+    Frequents,
     Services,
     About,
     Experiences,

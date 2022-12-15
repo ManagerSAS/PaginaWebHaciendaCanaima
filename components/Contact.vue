@@ -31,7 +31,7 @@
                                 type="number"
                                 color="#395730"    
                                 class="input"
-                                label="Numero de teléfono: " 
+                                label="Número  de teléfono: " 
                                 outlined
                                 dense
                             ></v-text-field>
@@ -100,7 +100,7 @@
                         <v-col  cols="12" sm="12" md="6" lg="6">
                             <v-checkbox
                                 v-model="terms"
-                                label="Acepto Terminos y condiciones *"
+                                label="Acepto términos y condiciones *"
                                 color="#395730"
                                 class="input"
                                 value="red"
