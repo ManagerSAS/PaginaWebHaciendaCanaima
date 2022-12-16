@@ -4,8 +4,8 @@
     <RedesSociales/>
     <MobileNavigation/>
     <Welcome/>
-    <Gallery class="mt-5 mb-5"/>
-    <Services class="mt-5 mb-5" style="background-color: #eff5de"/>
+    <Gallery/>
+    <Services style="background-color: #eff5de"/>
     <About />
     <Experiences class="mt-5 mb-5" style="background-color: #eff5de"/>
     <Contact class="mt-5 mb-5"/>

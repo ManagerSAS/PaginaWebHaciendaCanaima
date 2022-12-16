@@ -37,8 +37,8 @@
                         </v-row>
                     </div>
                 </VueSlickCarousel>   
-                <div justify="center" align="center">
-                    <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" >Cotiza<span class="text-lowercase">&nbsp;con&nbsp;</span>nosotros</v-btn>
+                <div justify="center" align="center" class="my-5">
+                    <v-btn color="#95bd20" width="200" class="text--btn white--text text-capitalize pa-1 pl-2 pr-2" >Cotiza<span class="text-lowercase">&nbsp;con&nbsp;</span>nosotros</v-btn>
                 </div>   
             </v-col>
         </v-row>

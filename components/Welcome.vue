@@ -78,25 +78,25 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
         return{
             sliderData: [
                 {
-                    bgImgSrc: "/Images/banners/BannerPc1.jpg"
+                    bgImgSrc: "/Images/banners/BannerPc1.png"
 
                 },
                 {
-                    bgImgSrc: "/Images/banners/BannerPc2.jpg"
+                    bgImgSrc: "/Images/banners/BannerPc2.png"
                 },
                 {
-                    bgImgSrc: "/Images/banners/BannerPc3.jpg"
+                    bgImgSrc: "/Images/banners/BannerPc3.png"
                 },
             ],
             sliderDataCel: [
                 {
-                    bgImgSrc: "/Images/banners/BannerCel1.jpg"
+                    bgImgSrc: "/Images/banners/BannerCel1.png"
                 },
                 {
-                    bgImgSrc: "/Images/banners/BannerCel2.jpg"
+                    bgImgSrc: "/Images/banners/BannerCel2.png"
                 },
                 {
-                    bgImgSrc: "/Images/banners/BannerCel3.jpg"
+                    bgImgSrc: "/Images/banners/BannerCel3.png"
                 },
 
             ],

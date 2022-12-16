@@ -1,7 +1,7 @@
 <template>
     <v-container fluid id="galeria">
         <div justify="center" align="center" >
-            <h1 class="mb-6 mt-5 titulos" >
+            <h1 class="mb-5 titulos" >
                 GALERÍA DE FOTOS
             </h1>
         </div>
@@ -16,8 +16,11 @@
                         />
                     </div>
                 </VueSlickCarousel>   
-                <div justify="center" align="center">
-                    <a href="https://api.whatsapp.com/send?phone=573114851304&text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20Hacienda%20Canaima%201" target="_blank" rel="noopener noreferrer"><button aria-label="RESERVA CON NOSOTROS" aria-hidden="true" class="btn-hover pa-1 pl-2 pr-2">Contáctanos</button></a>
+                <div justify="center" align="center" class="my-2">
+                    <!-- <a  target="_blank" rel="noopener noreferrer"><button aria-label="RESERVA CON NOSOTROS" aria-hidden="true" >Contáctanos</button></a> -->
+                    <v-btn color="#95bd20" width="200" class="text--btn white--text text-capitalize pa-1 pl-2 pr-2" href="https://api.whatsapp.com/send?phone=573114851304&text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20Hacienda%20Canaima%201">
+                        Contáctanos
+                    </v-btn>
                 </div>   
             </v-col>
         </v-row>

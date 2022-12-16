@@ -1,9 +1,9 @@
 <template>
     <v-container fluid id="services">
         <v-row justify="center" align="center">
-            <v-col cols="12" xl="8" lg="8" md="10" sm="12">
-                <VueSlickCarousel class="ma-10 containerService" v-bind="settingsServices"  justify="center" align="center">
-                    <div  justify="center" align="center" v-for="({src,NameService,Desc}, index) in sliderData" :key="index" >
+            <v-col cols="12" xl="8" lg="10s" md="11" sm="12">
+                <VueSlickCarousel class="ma-10 mt-xl-8 mt-md-5 containerService" v-bind="settingsServices"  justify="center" align="center">
+                    <div  justify="center" align="center" v-for="({src,NameService,Name1,adicional,Desc}, index) in sliderData" :key="index" >
                         <v-row justify="center" align="center" >
                             <v-col class="mt-8" cols="12" sm="12" md="6" lg="6">
                                 <v-img
@@ -12,7 +12,8 @@
                                 />
                             </v-col>
                             <v-col class="textServices" justify="center" align="start" cols="12" sm="12" md="6" lg="6">
-                                <h2 >{{NameService}}</h2><br>
+                                <p class="text-capitalize titulosPlans mx-4 mr-2" >{{NameService}}<br> {{Name1}}</p><br>
+                                <p>{{adicional}}</p>
                                 <h4>Incluye</h4><br>
                                 <p>{{Desc}}</p>
                             </v-col>
@@ -20,7 +21,7 @@
                     </div>
                 </VueSlickCarousel>   
                 <div justify="start" align="center" class="mb-5">
-                    <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" >Reservar</v-btn>
+                    <v-btn class="text--btn white--text text-capitalize pa-1 pl-2 pr-2" width="200" color="#95bd20" >Reservar</v-btn>
                 </div>   
             </v-col>
         </v-row>
@@ -46,10 +47,10 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
      data(){
         return{
             sliderData: [
-                {src: '/Images/Plans/BirdingAlojamiento.png', NameService:'PLAN ALOJAMIENTO CANAIMA FAMILIAR', Desc:'Alojamiento no incluye desayuno, Grupos de  5 a 13 pax, parqueadero, WIFI, tarjeta de asistencia médica, capacidad máxima familiar 13 personas, uso de piscina, cancha de micro, cancha de voley, servicio de auxiliar de cocina opcional (costo adicional)'},
-                {src: '/Images/Plans/Parejas.png', NameService:'PLAN ALOJAMIENTO CANAIMA PAREJAS', Desc:'Alojamiento incluye desayuno, a partir de 2 a 4 pax, parqueadero, WIFI, tarjeta de asistencia médica, Capacidad máxima familiar 13 personas, Uso de piscina, Cancha de micro, Cancha de voley, Servicio de auxiliar de cocina opcional (costo adicional).'},
-                {src: '/Images/Plans/BirdingTour.png', NameService:'BIRDING TOUR CON ALOJAMIENTO', Desc:'Alojamiento 1D + 1N, Desayuno + refrigerios + almuerzo, uso de piscina, cancha de micro, cancha de voley, guía especializado, tour de observación y fotografía en caminata por los senderos, recorrido en tractor hasta la reserva, tarjeta de asistencia médica'},
-                {src: '/Images/Plans/Planfamiliar.png', NameService:'PASADIA BIRDING TOUR', Desc:'Guianza especializada, refrigerio, hidratación, almuerzo, tarjeta de asistencia médica, uso de piscina, cancha de micro, cancha de voley, tour de observación y fotografía en caminata por los senderos, recorrido en tractor hasta la reserva, grupos a partir de 10 pax máximo 20.'},
+                {src: '/Images/Plans/BirdingAlojamiento.png', NameService:'PLAN ALOJAMIENTO',Name1:' CANAIMA FAMILIAR',adicional:'Disfruta del plan que tenemos para tu familia. Disponible para grupos entre 5 y 13 personas.', Desc:'Piscina, cancha de microfútbol, cancha de voleibol, WIFI, parqueadero, tarjeta de asistencia médica y servicio de auxiliar de cocina (costo adicional).'},
+                {src: '/Images/Plans/Parejas.png', NameService:'PLAN ALOJAMIENTO',Name1:' CANAIMA PAREJAS',adicional:'Celebra con la persona que más quieres rodeado de naturaleza: Disponible para grupos entre 2 y 4 personas. ', Desc:'Desayuno, piscina, cancha de microfútbol, cancha de voley, WIFI, parqueadero, tarjeta de asistencia médica y servicio de auxiliar de cocina (costo adicional).'},
+                {src: '/Images/Plans/BirdingTour.png', NameService:'BIRDING TOUR ',Name1:'CON ALOJAMIENTO',adicional:'Creamos este plan para que disfrutes la experiencia completa con nosotros', Desc:'Alojamiento 1 día + 1 noche, desayuno + refrigerios + almuerzo, tour de observación y fotografía en caminata por los senderos, recorrido en tractor hasta la reserva, piscina, cancha de microfútbol, cancha de voley, WIFI, parqueadero y tarjeta de asistencia médica.'},
+                {src: '/Images/Plans/Planfamiliar.png', NameService:'PASADÍA BIRDING TOUR',adicional:'Acompáñanos en este espacio para conocer las aves más representativas del Oriente Llanero. Disponible para grupos entre 10 y 20 personas.', Desc:'Refrigerios + almuerzo + hidratación, tour de observación y fotografía en caminata por los senderos, recorrido en tractor hasta la reserva, piscina, cancha de microfútbol, cancha de voley, WIFI, parqueadero y tarjeta de asistencia médica.'},
             ],
             settingsServices:{
                 "arrows": true,

@@ -7,7 +7,7 @@
                     <div class="col-xl-2 col-auto order-0">
                         <div class="header-logo">
                             <n-link to="/">
-                                <img format="png" loading="lazy"  sizes="sm:100vw md:50vw lg:400px" quality="70" fit="cover"  :src="logo" alt="Agency Logo"/>
+                                <img  src="../static/Images/LogoHeader.png" alt="Agency Logo"/>
                             </n-link>
                         </div>
                     </div>
@@ -55,7 +55,6 @@
     export default {
         data(){
             return{
-                logo:'/Images/LogoHeader.png',
                 isSticky: false,
             }
         },

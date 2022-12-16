@@ -3,7 +3,7 @@
         <v-row justify="center" align="center">
             <v-col justify="center" align="center" cols="12" sm="12" md="12" lg="12">
                 <h1 class="mb-6 mt-5 titulos">
-                    CONTACTÁNOS
+                    CONTÁCTANOS
                 </h1>
             </v-col>
         </v-row>
@@ -129,7 +129,7 @@
                             </v-col>
                         </v-row>
                     <div justify="center" align="center">
-                        <v-btn class="rounded-lg white--text text-capitalize" color="#95bd20" @click="SendMessage">Enivar formulario</v-btn>
+                        <v-btn color="#95bd20" width="200" class="text--btn white--text text-capitalize pa-1 pl-2 pr-2" @click="SendMessage">Enviar formulario</v-btn>
                     </div>
                 </v-form>
             </v-col>
