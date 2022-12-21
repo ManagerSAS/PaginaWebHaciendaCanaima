@@ -21,7 +21,7 @@
                     </div>
                 </VueSlickCarousel>   
                 <div justify="start" align="center" class="mb-5">
-                    <v-btn class="text--btn white--text text-capitalize pa-1 pl-2 pr-2" width="200" color="#95bd20" >Reservar</v-btn>
+                    <v-btn class="text--btn white--text text-capitalize pa-1 pl-2 pr-2" width="200" color="#95bd20" href="https://api.whatsapp.com/send?phone=573114851304&text=Hola%2C%20me%20gustar%C3%ADa%20conocer%20m%C3%A1s%20informaci%C3%B3n%20sobre%20la%20Hacienda%20Canaima%201" >Reservar</v-btn>
                 </div>   
             </v-col>
         </v-row>
