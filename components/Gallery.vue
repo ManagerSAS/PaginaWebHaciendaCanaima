@@ -54,7 +54,15 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
                 {src:'./Images/Galeria/6.png'},
                 {src:'./Images/Galeria/7.png'},
                 {src:'./Images/Galeria/8.png'},
-                {src:'./Images/Galeria/9.png'}
+                {src:'./Images/Galeria/9.png'},
+                {src:'./Images/Galeria/10.jpg'},
+                {src:'./Images/Galeria/11.jpg'},
+                {src:'./Images/Galeria/12.jpg'},
+                {src:'./Images/Galeria/13.jpg'},
+                {src:'./Images/Galeria/14.jpg'},
+                {src:'./Images/Galeria/15.jpg'},
+                {src:'./Images/Galeria/16.jpg'},
+                {src:'./Images/Galeria/17.jpg'},
             ],
             settingsGallery: {
                 "dots": false,

@@ -78,7 +78,7 @@ import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
         return{
             sliderData: [
                 {
-                    bgImgSrc: "/Images/banners/BannerPc1.png"
+                    bgImgSrc: "/Images/banners/BannerPc1.jpg"
 
                 },
                 {
